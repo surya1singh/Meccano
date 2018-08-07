@@ -10,6 +10,7 @@ def timer(func):
         return result
     return wrapper
 
+
 @timer
 def foo():
     a = 0
@@ -25,6 +26,7 @@ def foo1():
 def foo2():
     return len(list(range(100000)))
 
-total_iteration = foo()
-total_iteration1 = foo1()
-total_iteration2 = foo2()
+if __name__ == '__main__':
+    total_iteration = foo()
+    total_iteration1 = foo1()
+    total_iteration2 = foo2()
