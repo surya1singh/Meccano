@@ -30,11 +30,11 @@ class timer():
     def __exit__(self, type, value, traceback):
         self.checkpoint('finished')
 
-
-with timer() as timer:
-    foo()
-    timer.checkpoint('foo')
-    foo1()
-    timer.checkpoint('foo1')
-    foo2()
-    timer.checkpoint('foo2')
+if __name__ = '__main__':
+    with timer() as timer:
+        foo()
+        timer.checkpoint('foo')
+        foo1()
+        timer.checkpoint('foo1')
+        foo2()
+        timer.checkpoint('foo2')
